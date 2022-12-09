@@ -1,0 +1,19 @@
+.trademark-picture {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+
+.trademark-picture__image {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet) {
+    margin: 0 104px;
+  }
+
+  @media (min-width: $desktop-min) {
+    grid-column: 2/-1;
+    grid-row: 1/3;
+  }
+}

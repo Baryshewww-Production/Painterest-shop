@@ -1,0 +1,54 @@
+.social-networks-marketplaces__item {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-networks-marketplaces__icon {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    height: 45px;
+    width: 53.5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 9px;
+
+    border-radius: 5px;
+
+    &--OZON {
+      background-image: url("../../img/ozon_icon.png");
+    }
+
+    &--WILDBERRIES {
+      background-image: url("../../img/wildberries_icon.png");
+    }
+
+    &--YANDEX {
+      background-image: url("../../img/yandex_icon.png");
+    }
+
+    &--WhatsApp {
+      background-image: url("../../img/whatsapp_icon.png");
+    }
+
+    &--Telegram {
+      background-image: url("../../img/telegram_icon.png");
+    }
+  }
+
+
+
+
+}
+
