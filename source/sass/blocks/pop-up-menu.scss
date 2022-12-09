@@ -1,0 +1,26 @@
+
+.pop-up-menu__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.pop-up-menu__logo {
+  width: 135px;
+  height: 25px;
+  background-image: url("../../svg/logo-painterest-colorful.svg")
+}
+
+.menu-list__item {
+  margin-bottom: 16px;
+}
+
+.menu-list__link {
+  font-size: 20px;
+  color: $grey-pop-up-text;
+}
+
+
+
+

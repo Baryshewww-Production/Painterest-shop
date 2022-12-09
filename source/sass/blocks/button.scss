@@ -1,0 +1,82 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+  padding: 16px;
+
+  &--intro {
+    background-color: $white;
+    color: $intro-slogan-button-text;
+    border-radius: 10px;
+
+    @media (min-width: $tablet) {
+      width: 320px;
+      height: 49px;
+    }
+
+    @media (min-width: $desktop-min) {
+      font-size: 24px;
+      line-height: 28px;
+      width: 441px;
+      height: 64px;
+    }
+  }
+
+  &--intro:active {
+    background-color: $button-intro-active;
+    color: $white;
+  }
+}
+
+.button__social {
+  border-radius: 5px;
+  width: 290px;
+
+  &--OZON {
+    background-color: $navigation-dark-blue;
+  }
+
+  &--WILDBERRIES {
+    background-color: $navigation-purple;
+  }
+
+  &--YANDEX {
+    background-color: $navigation-yellow;
+  }
+
+  &--WhatsApp {
+    background-color: $navigation-green;
+  }
+
+  &--Telegram {
+    background-color: $navigation-light-blue;
+  }
+
+  @media (min-width: $phablet) {
+    width: 348px;
+    height: 45px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: 320px;
+    height: 45px;
+    padding: 0;
+  }
+
+}
+
+.button__text {
+
+  &--social {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $white;
+  }
+}
+

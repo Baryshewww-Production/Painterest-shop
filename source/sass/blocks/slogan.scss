@@ -1,0 +1,43 @@
+.slogan {
+  display: grid;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 134px;
+    gap: 43px 0;
+  }
+}
+
+.slogan__description {
+
+  @media (min-width: $tablet) {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+
+    text-align: left;
+  }
+}
+
+.slogan__picture {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 47px;
+
+  @media (min-width: $tablet) {
+   grid-column: 1/2;
+    grid-row: 1/-1;
+
+    margin: 0;
+  }
+}
+
+.slogan__button {
+
+
+  @media (min-width: $tablet) {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+  }
+}
+

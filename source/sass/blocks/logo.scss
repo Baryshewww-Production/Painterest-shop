@@ -1,0 +1,14 @@
+.logo {
+  width: 133px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &--colorful {
+    background-image: url("../../svg/logo-painterest-colorful.svg");
+  }
+
+  &--white {
+    background-image: url("../../svg/logo-painterest-white.svg");
+  }
+}

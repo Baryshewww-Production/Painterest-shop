@@ -1,0 +1,29 @@
+.heading {
+  margin: 0;
+
+  &--h1 {
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: lighter;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    @media (min-width: $desktop-min) {
+      font-size: 37px;
+      line-height: 43px;
+    }
+
+  }
+
+  &--intro {
+    color: $white;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+}

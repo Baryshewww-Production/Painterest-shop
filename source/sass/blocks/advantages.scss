@@ -1,0 +1,76 @@
+.advantages {
+  display: grid;
+  gap: 34px;
+  font-size: 16px;
+  line-height: 23px;
+  color: $white;
+  position: relative;
+  padding: 21px 0 80px;
+  margin: 0;
+}
+
+.advantages::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 8px;
+  height: 100%;
+  width: 2px;
+  background-color: $white;
+}
+
+.advantages::after {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: -2px;
+  height: 18px;
+  width: 22px;
+  background-image: url("../../svg/arrow-down.svg");
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 40px;
+
+  @media (min-width: $phablet) {
+    font-size: 18px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-min) {
+    font-size: 20px;
+    padding-left: 70px;
+  }
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  top: 50%;
+  left: 0;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 21px;
+  box-shadow: 0 0 0 2px $white;;
+}
+
+.advantages__item--crack-proof::before {
+  background-color: $red;
+}
+
+.advantages__item--flexibility::before {
+  background-color: $intro-property-orange;
+}
+
+.advantages__item--durability::before {
+  background-color: $intro-property-green;
+}
+
+.advantages__item--source-material::before {
+  background-color: $intro-property-lightblue;
+}

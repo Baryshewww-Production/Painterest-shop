@@ -1,0 +1,124 @@
+.page-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  min-height: 70px;
+  border-radius: 0 0 15px 15px;
+
+  &--white {
+    background-color: $white;
+  }
+
+  &--transparent {
+    background-color: rgba($white, 30%);
+  }
+
+  &--scroll {
+    background-color: $white;
+  }
+}
+
+.page-nav__inner {
+}
+
+.page-nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.page-nav__menu-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-nav__menu-button {
+  position: relative;
+  width: 24px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--close {
+    background-image: url("../../svg/button-menu-close.svg");
+  }
+
+  &--open {
+    background-image: url("../../svg/button-menu-open.svg");
+  }
+
+  &--open-grey {
+    background-image: url("../../svg/button-menu-open-grey.svg");
+  }
+}
+
+.page-nav__menu-list {
+  margin: 43px 0 0 0;
+  padding: 0;
+
+  @media (min-width: $phablet) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+.page-nav__menu-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.page-nav__menu-item:last-child {
+
+  @media (min-width: $tablet) {
+    margin-bottom: 18px;
+  }
+}
+
+.page-nav__menu-link {
+  font-size: 20px;
+  color: $grey-pop-up-text;
+}
+
+.page-nav--transparent .page-nav__menu-list {
+  display: none;
+}
+
+.page-nav--scroll .page-nav__menu-list {
+  display: none;
+}
+
+.page-nav__social-networks {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+
+  @media (min-width: $phablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page-nav--transparent .page-nav__social-networks {
+  display: none;
+}
+
+.page-nav--scroll .page-nav__social-networks {
+  display: none;
+}
